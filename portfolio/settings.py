@@ -27,7 +27,7 @@ SECRET_KEY = '$q--@s1_lf^i944k&vqvhf1oix1wnon(^6_lx0u$6ljq5s9*l('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
 
     'storages',
+
+    'portfolio',
 ]
 
 MIDDLEWARE = [
@@ -61,7 +63,7 @@ ROOT_URLCONF = 'portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -132,11 +134,14 @@ MEDIA_URL = '/images/'
 
 if DEBUG:
 
-  STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+  STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+    "D:/Documentos/PORTFOLIO-DJANGO/portfolio/static",
+  ]
 
 else:
 
-  STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+  STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
   
 MEDIA_ROOT = os.path.join(BASE_DIR, 'images')
