@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$q--@s1_lf^i944k&vqvhf1oix1wnon(^6_lx0u$6ljq5s9*l('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -136,7 +136,7 @@ if DEBUG:
 
   STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-    "D:/Documentos/PORTFOLIO-DJANGO/portfolio/static",
+    "/static",
   ]
 
 else:
