@@ -133,10 +133,8 @@ MEDIA_URL = '/images/'
   
 
 if DEBUG:
-
   STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-    "/static",
+    os.path.join(BASE_DIR, "static"),
   ]
 
 else:
