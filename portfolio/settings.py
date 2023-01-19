@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '$q--@s1_lf^i944k&vqvhf1oix1wnon(^6_lx0u$6ljq5s9*l('
+SECRET_KEY = '
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -150,7 +150,7 @@ EMAIL_HOST = 'smtp.office365.com'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'hassan_bittencourt@hotmail.com'
-EMAIL_HOST_PASSWORD = 'ocewfzrhagxhkcmy'
+EMAIL_HOST_PASSWORD = ''
 
 
 # Configure Django App for Heroku.
